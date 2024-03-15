@@ -32,7 +32,7 @@ void main() {
 
   print("Flow #2 Pro Plan Subscription !\n\n");
 
-  user.subscribe(ProPlan());
+  subscriptionService.subscribeUserToPlan(user, ProPlan());
 
   user.connectServer(server1);
   user.connectServer(server2); // success
